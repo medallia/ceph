@@ -4995,6 +4995,14 @@ static std::vector<Option> get_rbd_options() {
     Option("rbd_mirror_leader_max_acquire_attempts_before_break", Option::TYPE_INT, Option::LEVEL_ADVANCED)
     .set_default(3)
     .set_description(""),
+
+    Option("rbd_write_iops_limit", Option::TYPE_UINT, Option::LEVEL_ADVANCED)
+    .set_default(0)
+    .set_description(""),
+
+    Option("rbd_read_iops_limit", Option::TYPE_UINT, Option::LEVEL_ADVANCED)
+    .set_default(0)
+    .set_description(""),
   });
 }
 
